@@ -1,0 +1,7 @@
+{
+    "mvc": {
+        "view": {
+            "defaultViewExtension": "cshtml"
+        }
+    }
+}

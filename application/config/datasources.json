@@ -1,0 +1,22 @@
+{
+    "datasourceList": [
+        {
+            "id":           "dbconn",
+            "type":         "pdo",
+            "persistent":   true,
+            "overrideCase": "natural",
+            "pdoString":    "pgsql:host=localhost;dbname=scabbiaapp",
+            "username":     "scabbiaapp",
+            "password":     "scabbiaapp",
+            "initCommand":  ""
+        },
+        {
+            "id":           "storage",
+            "type":         "memcache",
+            "cacheTtl":     120,
+            "keyphase":     "",
+            "host":         "localhost",
+            "port":         11211
+        }
+    ]
+}
