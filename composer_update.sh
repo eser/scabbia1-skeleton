@@ -1,6 +1,9 @@
-if [ -f vendor ]; then
-    php composer.phar update
-else
-    curl -s http://getcomposer.org/installer | php
-    php composer.phar install
-fi
+#!/usr/bin/php
+<?php
+
+if (file_exists('vendor')) {
+    passthru('php composer.phar update');
+} else {
+    passthru('curl -s http://getcomposer.org/installer | php');
+    passthru('php composer.phar install');
+}

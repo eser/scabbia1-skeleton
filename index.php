@@ -24,7 +24,6 @@ Framework::run(
         'Scabbia\\Extensions\\Http\\Http::routing',
         'Scabbia\\Extensions\\Assets\\Assets::routing'
     ),
-    'Scabbia\\Extensions\\Http\\Http::notfound'
+    'Scabbia\\Extensions\\Http\\Http::notfound',
+    'Scabbia\\Extensions\\Http\\Http::error'
 );
-
-?>
