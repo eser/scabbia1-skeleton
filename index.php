@@ -1,13 +1,15 @@
 <?php
 
 // if scabbia installation on different directory
-// define('SCABBIA_PATH', __DIR__ . '/../scabbia-dev/src');
+// if (file_exists($scabbiaPath = __DIR__ . '/../scabbia-dev/src')) {
+//     define('SCABBIA_PATH', $scabbiaPath);
+// }
 
-if(!file_exists('vendor/autoload.php')) {
+if(!file_exists($scabbiaLoader = 'vendor/autoload.php')) {
     throw new RuntimeException('Unable to load Scabbia Framework. Run `php composer.phar install` or define a php constant named SCABBIA_PATH to locate the framework installation.');
 }
 
-$loader = require('vendor/autoload.php');
+$loader = require($scabbiaLoader);
 
 if (defined('SCABBIA_PATH') && SCABBIA_PATH !== false) {
     $loader->set('Scabbia', SCABBIA_PATH);
@@ -15,15 +17,10 @@ if (defined('SCABBIA_PATH') && SCABBIA_PATH !== false) {
 
 use Scabbia\Framework;
 
-// Framework::$endpoints[] = 'http://scabbiaapp.com';
 Framework::$development = 1;
 Framework::load($loader);
 
-Framework::run(
-    array(
-        'Scabbia\\Extensions\\Http\\Http::routing',
-        'Scabbia\\Extensions\\Assets\\Assets::routing'
-    ),
-    'Scabbia\\Extensions\\Http\\Http::notfound',
-    'Scabbia\\Extensions\\Http\\Http::error'
-);
+Framework::runApplication(new \Scabbia\Application());
+// Framework::runApplicationByEndpoint(array(
+//         'Scabbia\\Application' => array('http://localhost', 'https://localhost')
+//     ));
