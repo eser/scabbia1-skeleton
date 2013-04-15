@@ -27,12 +27,12 @@
                     {
                         "type":     "file",
                         "class":    "common",
-                        "path":     "{base}res/fonts.css"
+                        "path":     "{base}assets/fonts.css"
                     },
                     {
-                        "type":     "file",
+                        "type":     "file.less",
                         "class":    "common",
-                        "path":     "{base}res/common.css"
+                        "path":     "{base}assets/common.less"
                     }
                 ]
             }
