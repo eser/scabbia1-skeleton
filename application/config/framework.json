@@ -13,6 +13,12 @@
         "{app}models/*.php"
     ],
 
+    "loadClassList": [],
+
+    "extensionList": [
+        "admin"
+    ],
+
     "i18n": {
         "languages": [
             {
