@@ -8,6 +8,19 @@ Installation
 ------------
 On *nix:
 ``` bash
+php composer.phar create-project larukedi/scabbia-skeleton -s dev
+```
+
+On Windows:
+``` bat
+composer create-project larukedi/scabbia-skeleton -s dev
+```
+
+
+Update
+------
+On *nix:
+``` bash
 ./composer_update.sh
 ```
 
@@ -15,6 +28,7 @@ On Windows:
 ``` bat
 composer_update.cmd
 ```
+
 
 Requirements
 ------------
@@ -32,4 +46,5 @@ See [license.txt](license.txt)
 
 Contributing
 ------------
-Fork the repo, push your changes to your fork, and submit a pull request.
+* Fork the repo, push your changes to your fork, and submit a pull request.
+* If something does not work, please report it using GitHub issues.

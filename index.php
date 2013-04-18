@@ -6,7 +6,7 @@
 // }
 
 if(!file_exists($scabbiaLoader = 'vendor/autoload.php')) {
-    throw new RuntimeException('Unable to load Scabbia Framework. Run `php composer.phar install` or define a php constant named SCABBIA_PATH to locate the framework installation.');
+    throw new RuntimeException('Unable to load Scabbia Framework. Run `./composer_update.sh` or define a php constant named SCABBIA_PATH to locate the framework installation.');
 }
 
 $loader = require($scabbiaLoader);
