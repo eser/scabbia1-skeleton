@@ -1,19 +1,26 @@
 {
+    "includeList": [
+        "{app}controllers/*.php"
+    ],
+
+    "classLoaderList": [
+        "{app}includes",
+        "{app}tests",
+        "{app}models"
+    ],
+    
+    "eventList": [
+        {
+            "name":         "pre-run",
+            "type":         "callback",
+            "value":        "App\\Translations::javascriptTranslations"
+        }
+    ],
+
     "options": {
         "gzip":                 true,
         "siteroot:disabled":    "/scabbiaapp"
     },
-
-    "downloadList": [],
-
-    "includeList": [
-        "{app}includes/*.php",
-        "{app}writable/downloaded/*.php",
-        "{app}controllers/*.php",
-        "{app}models/*.php"
-    ],
-
-    "loadClassList": [],
 
     "extensionList": [
         "admin"

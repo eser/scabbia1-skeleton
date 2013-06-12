@@ -2,21 +2,36 @@
     "datasourceList": [
         {
             "id":           "dbconn",
-            "type":         "pdo",
+            "interface":    "pdo",
             "persistent":   true,
             "overrideCase": "natural",
             "pdoString":    "pgsql:host=localhost;dbname=scabbiaapp",
             "username":     "scabbiaapp",
             "password":     "scabbiaapp",
             "initCommand":  ""
-        },
+        }
+    ],
+    "datasourceList:disabled": [
         {
             "id":           "storage",
-            "type":         "memcache",
+            "interface":    "memcache",
             "cacheTtl":     120,
             "keyphase":     "",
             "host":         "localhost",
             "port":         11211
+        },
+        {
+            "id":           "storage",
+            "interface":    "file",
+            "cacheTtl":     120,
+            "keyphase":     "",
+            "path":         "{base}writable",
+            "baseurl":      "//{host}{root}/writable/"
+        },
+        {
+            "id":           "webservice",
+            "interface":    "rest",
+            "baseUrl":      "http://192.168.2.152:3535/crawler"
         }
     ]
 }

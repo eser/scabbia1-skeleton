@@ -1,17 +1,19 @@
 <?php
 
-    use Scabbia\Extensions\Models\Model;
+namespace App;
 
+use Scabbia\Extensions\Models\Model;
+
+/**
+ * @ignore
+ */
+class homeModel extends Model
+{
     /**
      * @ignore
      */
-    class homeModel extends Model
+    public function getWelcomeText()
     {
-        /**
-         * @ignore
-         */
-        public function getWelcomeText()
-        {
-            return 'Welcome!';
-        }
+        return 'Welcome!';
     }
+}

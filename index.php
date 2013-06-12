@@ -5,7 +5,7 @@
 //     define('SCABBIA_PATH', $scabbiaPath);
 // }
 
-if(!file_exists($scabbiaLoader = 'vendor/autoload.php')) {
+if (!file_exists($scabbiaLoader = 'vendor/autoload.php')) {
     throw new RuntimeException('Unable to load Scabbia Framework. Run `./composer_update.sh` or define a php constant named SCABBIA_PATH to locate the framework installation.');
 }
 
@@ -17,10 +17,7 @@ if (defined('SCABBIA_PATH') && SCABBIA_PATH !== false) {
 
 use Scabbia\Framework;
 
-Framework::$development = 1;
+Framework::$development = true;
 Framework::load($loader);
 
-Framework::runApplication(new \Scabbia\Application());
-// Framework::runApplicationByEndpoint(array(
-//         'Scabbia\\Application' => array('http://localhost', 'https://localhost')
-//     ));
+Framework::runApplication('App');
