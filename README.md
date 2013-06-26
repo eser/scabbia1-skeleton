@@ -19,14 +19,8 @@ composer create-project larukedi/scabbia-skeleton -s dev
 
 Update
 ------
-On *nix:
 ``` bash
-./composer_update.sh
-```
-
-On Windows:
-``` bat
-composer_update.cmd
+php composer_update.php
 ```
 
 
