@@ -15,10 +15,10 @@ if (stristr(PHP_OS, 'WIN')) {
     }
 
     $tComposerCmd = $tPhpPath . ' composer.phar';
+}
 
-    if (!file_exists('composer.phar')) {
-        passthru('curl -s http://getcomposer.org/installer | php');
-    }
+if (!file_exists('composer.phar')) {
+    passthru($tPhpPath . ' -r "eval(\'?' . '>\' . file_get_contents(\'https://getcomposer.org/installer\'));"');
 }
 
 if (file_exists('vendor')) {
