@@ -15,7 +15,7 @@
                     {
                         "bindtype": "file",
                         "class":    "common",
-                        "path":     "{base}assets/common.js"
+                        "path":     "{base}assets/js/common.js"
                     }
                 ]
             },
@@ -27,12 +27,12 @@
                     {
                         "bindtype": "file",
                         "class":    "common",
-                        "path":     "{base}assets/fonts.css"
+                        "path":     "{base}assets/css/fonts.css"
                     },
                     {
                         "bindtype": "file.less",
                         "class":    "common",
-                        "path":     "{base}assets/common.less"
+                        "path":     "{base}assets/css/common.less"
                     }
                 ]
             }
