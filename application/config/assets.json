@@ -30,7 +30,7 @@
                         "path":     "{base}assets/css/fonts.css"
                     },
                     {
-                        "bindtype": "file.less",
+                        "bindtype": "file",
                         "class":    "common",
                         "path":     "{base}assets/css/common.less"
                     }
