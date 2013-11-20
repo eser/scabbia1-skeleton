@@ -57,5 +57,7 @@ See [license.txt](license.txt)
 
 Contributing
 ------------
+It is publicly open for any contribution. Bugfixes and suggestions are welcome.
+
 * Fork the repo, push your changes to your fork, and submit a pull request.
 * If something does not work, please report it using GitHub issues.
