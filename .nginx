@@ -1,13 +1,12 @@
 charset utf-8;
 
-location ~ /(^\.|/\.|^web.config|/web.config|^scabbia$|^composer.json|/composer.json|^composer.lock|/composer.lock|^application/?$|^application/.+$|^vendor/?$|^vendor/.+$) {
+location ~ ^/([^/]*/)*(\..+|web.config|scabbia|composer.json|composer.lock|application/?|application/.+|vendor/?|^vendor/.+)$ {
     return 403;
 }
 
 location / {
     if (!-e $request_filename){
         rewrite ^(.*)$ /index.php last;
-	break;
+        break;
     }
 }
-
