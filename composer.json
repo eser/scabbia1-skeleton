@@ -1,6 +1,6 @@
 {
     "name": "eserozvataf/scabbia1-skeleton",
-    "description": "Skeleton Application for Scabbia Framework 1.5",
+    "description": "Skeleton Application for Scabbia PHP Framework (1.x branch)",
     "type": "library",
     "minimum-stability": "dev",
     "keywords": [
