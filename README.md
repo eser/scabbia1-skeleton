@@ -1,6 +1,6 @@
 # Scabbia Skeleton Application
 
-[This project](//github.com/larukedi/Scabbia-Skeleton/) is the skeleton application using [Scabbia Framework](//github.com/larukedi/Scabbia-Framework/) and its extensions. It is designed to helps you to jump-start developing projects with the Scabbia without setting up a configuration from scratch.
+[This project](https://github.com/eserozvataf/scabbia1-skeleton) is the skeleton application using [Scabbia Framework](https://github.com/eserozvataf/scabbia1) and its extensions. It is designed to helps you to jump-start developing projects with the Scabbia without setting up a configuration from scratch.
 
 
 ## Installation
@@ -9,10 +9,10 @@
 
 On Terminal or Command Prompt:
 ``` bash
-git clone https://github.com/larukedi/Scabbia-Skeleton project
+git clone https://github.com/eserozvataf/scabbia1-skeleton project
 ```
 
-Alternatively [Scabbia Skeleton](//github.com/larukedi/Scabbia-Skeleton/archive/master.zip) package can be downloaded directly.
+Alternatively [Scabbia Skeleton](https://github.com/eserozvataf/scabbia1-skeleton/archive/master.zip) package can be downloaded directly.
 
 **Step 2:**
 
@@ -57,7 +57,7 @@ a sample mysql database configuration:
 ## Requirements
 * PHP 5.3.3+ (http://www.php.net/)
 * Composer Dependency Manager** (http://getcomposer.org/)
-* Scabbia Framework** (//github.com/larukedi/Scabbia-Framework/)
+* Scabbia Framework** (https://github.com/eserozvataf/scabbia1)
 
 ** Will be auto-installed during composer execution
 

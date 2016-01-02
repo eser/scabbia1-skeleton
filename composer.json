@@ -1,31 +1,31 @@
 {
-    "name": "larukedi/scabbia-skeleton",
-    "description": "Skeleton Application for Scabbia Framework",
+    "name": "eserozvataf/scabbia1-skeleton",
+    "description": "Skeleton Application for Scabbia Framework 1.5",
     "type": "library",
     "minimum-stability": "dev",
     "keywords": [
-        "larukedi",
+        "eserozvataf",
         "scabbia",
         "framework",
         "skeleton"
     ],
-    "homepage": "https://github.com/larukedi/Scabbia-Skeleton/",
+    "homepage": "https://github.com/eserozvataf/scabbia1-skeleton",
     "license": "GPL-3.0+",
     "authors": [
         {
             "name": "Eser Ozvataf",
-            "email": "eser@sent.com"
+            "email": "eser@ozvataf.com"
         }
     ],
     "require": {
-        "larukedi/scabbia-framework": "dev-master"
+        "eserozvataf/scabbia1": "dev-master"
     },
     "scripts": {
         "post-install-cmd": [
-            "cd vendor/larukedi/scabbia-framework/ && git submodule init && git submodule update"
+            "cd vendor/eserozvataf/scabbia1/ && git submodule init && git submodule update"
         ],
         "post-update-cmd": [
-            "cd vendor/larukedi/scabbia-framework/ && git submodule init && git submodule update"
+            "cd vendor/eserozvataf/scabbia1/ && git submodule init && git submodule update"
         ]
     }
 }
